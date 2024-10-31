@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100%;
+    overflow-x: none;
+    background: radial-gradient(343px at 46.3% 47.5%, rgb(242, 242, 242) 0%, rgb(241, 241, 241) 72.9%);
+  
+ 
+  
+}
+.navcontainer{
+width: 100vw;
+min-height: 80px;
+background: #00c3ff;  
+background: -webkit-linear-gradient(to right, #ffff1c, #00c3ff);  
+background: linear-gradient(to right, #ffff1c, #00c3ff); 
+
+display: flex;
+justify-content: center;
+    align-items: center;
+
+}
+nav{
+    width: 100%;
+  
+}
+#navlogo{
+    font-size: 3rem;
+   color: rgb(36, 80, 118);
+}
+#listitems{
+font-size: 2.5rem;
+color: rgb(14, 241, 241);
+}
+#navlist{
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    margin: 10px;
+    color: aliceblue;
+  }
+
+  .footer{
+    background: #00c3ff;  
+    background: -webkit-linear-gradient(to right, #ffff1c, #00c3ff);  
+    background: linear-gradient(to right, #ffff1c, #00c3ff); 
+    width: 100vw;
+    color: rgb(36, 80, 118);
+    font-size: 2rem;
+    text-align: center;
+    min-height: 40px;
+  }
+  .contentBox{
+    width: 70%;
+    
+    margin: auto;
+    
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding: 3rem;
+    /* box-shadow: 3px 3px 3px black; */
+    box-shadow: 0px 0px 30px black;
+  }
+
+  .items{
+    display: flex;
+ justify-content: space-around;
+ align-items: center;
+ 
+  }
+  .leftBox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .leftBox h2{
+    font-size: 2rem;
+  }
+  #ind{
+    font-size: 1.5rem;
+  }
+  #rec{
+    font-size: 1.4rem;
+  }
+  .rightBox{
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    width: 400px; /* Set width for consistency */
+    height: 400px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+  }
+  .rightBox img {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s ease-in-out; /* Smooth hover effect */
+}
+
+.rightBox:hover img {
+    transform: scale(1.1); /* Smooth scaling on hover */
+}
+
+.rightBox .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(80, 70, 70, 0.7); /* Slightly increased opacity */
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; /* Smooth fade-in */
+}
+
+.rightBox:hover .overlay {
+    opacity: 1; /* Overlay becomes fully visible on hover */
+}
+
+.rightBox .overlay span{
+    color: white;
+    font-size: 1.2rem;
+}
